@@ -1,0 +1,597 @@
+\documentclass[cn,11pt]{elegantbook}
+\usepackage{tabularx}
+\title{高中物理学讲义}
+\subtitle{Elegant\LaTeX{} }
+
+\author{Tylor Gan}
+\institute{Tencent}
+\date{\today}
+\version{1989}
+
+\extrainfo{So far as the theories of mathematics are about reality, they are not certain; 
+so far as they are certain, they are not about reality. --- Albert Einstein}
+
+\logo{logo.png}
+\cover{cover.jpg}
+
+
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+% \thispagestyle{empty}
+
+\mainmatter
+\hypersetup{pageanchor=true}
+
+\chapter{运动的描述　匀变速直线运动的研究}
+
+   \section{描述运动的基本概念}
+      \subsection{知识梳理}
+
+      \begin{enumerate}
+         \item 质点
+         \begin{enumerate}
+            \item 用来代替物体的有质量的点叫做质点．
+            \item 研究一个物体的运动时，如果物体的形状和大小对所研究问题的影响可以忽略，就可以将该运动物体看做质点．
+            \item 质点是一种理想化模型，实际并不存在．
+         \end{enumerate}
+         \item 参考系
+         \begin{enumerate}
+            \item 参考系可以是运动的物体，也可以是静止的物体，但被选为参考系的物体，我们都假定它是静止的.
+            \item 比较两物体的运动情况时，必须选同一参考系.
+            \item 选取不同的物体作为参考系，对同一物体运动的描述可能相同，也可能不同. 通常以地面为参考系.
+         \end{enumerate}
+         \item 位移
+         \begin{enumerate}
+            \item 定义：表示质点的位置变动，它是质点由初位置指向末位置的有向线段.
+            \item 与路程的区别：位移是矢量，路程是标量. 只有在单向直线运动中，位移的大小才等于路程.   
+         \end{enumerate}
+         \item 速度
+         \begin{enumerate}
+            \item 物理意义：描述物体运动快慢和运动方向的物理量，是状态量.
+            \item 定义式：$v=\frac{\Delta x}{\Delta t}$.
+            \item 大小：在数值上等于单位时间内物体位移的大小.
+            \item 方向：与位移同向，即物体运动的方向.
+         \end{enumerate}
+         \item 平均速度
+         \begin{enumerate}
+            \item 在变速运动中，物体在某段时间内的 位移与发生这段位移所用时间的比值叫做这段时间内的平均速度，即$\overline{v}=\frac{\Delta x}{\Delta t}$，其方向与位移的方向相同.
+            \item 平均速度反映一段时间内物体运动的平均快慢程度，它与一段时间或一段位移相对应.
+         \end{enumerate}
+         \item 瞬时速度
+         \begin{enumerate}
+            \item 运动物体在某一时刻(或某一位置)的速度，方向沿轨迹上物体所在点的切线方向指向前进的一侧，是矢量. 瞬时速度的大小叫速率，是标量.
+            \item 瞬时速度能精确描述物体运动的快慢，它是在运动时间$\Delta t \rightarrow 0$时的平均速度，与某一时刻或某一位置相对应.
+            \item 平均速率是路程与时间的比值，它与平均速度的大小没有对应关系.
+         \end{enumerate}
+         \item 速度变化量
+         \begin{enumerate}
+            \item 物理意义：描述物体速度改变的物理量，是过程量.
+            \item 定义式：$\Delta v=v-v_{0}$.
+            \item 大小：$\Delta v$可以由v与$v_{0}$进行矢量运算得到，也可以由$\Delta v=a \Delta t$计算得到.
+            \item 方向：可以用矢量图形来描述Δv的方向，如图甲、乙、丙所示，$\Delta v$的方向由初速度($v_{0}$)矢量的末端指向末速(v)矢量的末端.
+         \end{enumerate}
+         \item 加速度
+         \begin{enumerate}
+            \item 物理意义：描述物体速度变化快慢和变化方向的物理量，是状态量.
+            \item 定义式：$a=\frac{\Delta v}{\Delta t}=\frac{v-v_{0}}{\Delta t}$.
+            \item 决定因素：a不是由$v, \Delta t, \Delta v$来决定，而是由F、M来决定.
+            \item 与$\Delta v$的方向一致，由合外力的方向决定，而与$v_{0}, v$的方向无关.
+         \end{enumerate}
+      \end{enumerate}
+
+      \subsection{考法拓展}
+      \begin{enumerate}
+         \item 对质点概念的理解
+         \begin{exercise}
+            在研究下述运动时，能把物体看做质点的是(　B　)
+
+            A．研究短跑运动员的起跑动作时
+
+            B．研究一架无人机的飞行快慢时
+
+            C．将一枚硬币用力上抛并猜测它落地时正面是朝上还是朝下时
+
+            D．研究汽车在上坡时有无翻倒的危险时
+            \begin{solution}
+               研究短跑运动员的起跑动作、抛出硬币落地时的上下面时，所研究对象的大小和形状不能忽略，故运动员和硬币都不能看做质点；研究汽车翻倒是转动问题，不能将汽车看做质点；研究飞机飞行快慢时，可把飞机看做质点．故选项B正确．
+
+               
+            \end{solution}
+            
+         \end{exercise}
+         \begin{note}
+            建立质点模型的两个关键点
+            \begin{itemize}
+               \item 明确题目中要研究的问题是什么．质点是对实际物体的科学抽象，是研究物体运动时对实际物体进行的近似，真正的质点并不存在．
+               \item 分析物体的大小和形状对所研究的问题产生的影响能否忽略不计．当物体的大小和形状对所研究运动的影响很小，可以忽略不计时，就可将其视为质点．
+            \end{itemize}
+         \end{note}
+         \item 位移与路程的区别和联系
+         
+         \begin{table}[htbp]
+            \centering
+            \caption{位移与路程的区别和联系}
+              \begin{tabular}{llll}
+              \toprule
+              比较项目 & 位移x & 路程l  \\
+              \midrule
+              决定因素 & 由始、末位置决定 & 由实际的运动轨迹长度决定\\
+              运算规则 & 矢量的三角形定则或平行四边形定则 & 标量的代数运算   \\
+              大小关系 & $x \leqslant l$ & 路程是位移被无限分割后，\\
+              &&所分的各小段位移的绝对值的和  \\
+              \bottomrule
+              \end{tabular}%
+            \label{tab:theorem-class}%
+          \end{table}%
+         
+         \begin{exercise}
+            (2017·湖南株洲质检)(多选)关于位移和路程，下列说法正确的是(　BD　)
+            A．物体在某一段时间内运动的位移为零，则其一定是静止的
+
+            B．物体在某一段时间内运动的路程为零，则其一定是静止的
+
+            C．在直线运动中，物体的位移大小一定等于其路程
+
+            D．在曲线运动中，物体的位移大小一定小于路程
+            \begin{solution}
+               路程指物体运动轨迹的长度，而位移指由初位置指向末位置的有向线段，只有当物体做单向直线运动时，其位移大小才等于路程．容易判断选项B、D正确，A、C错误．
+
+               
+            \end{solution}
+
+        
+            
+         \end{exercise}
+         \item 平均速度与瞬时速度的区别和联系
+         \begin{enumerate}
+            \item 两种物体的速度
+            \begin{enumerate}
+               \item 瞬时速度是运动时间$\Delta t \rightarrow 0$时的平均速度．
+               \item 对于匀速直线运动，瞬时速度与平均速度相等．
+
+            \end{enumerate}
+            \item 关于用平均速度法求瞬时速度
+            \begin{enumerate}
+               \item 方法概述：由平均速度公式$\overline{v}=\frac{\Delta x}{\Delta t}$可知，当$\Delta x、\Delta t$都非常小，趋向于极限时，这时的平均速度就可认为是某一时刻或某一位置的瞬时速度．
+               \item 选用思路：当已知物体在微小时间$\Delta t$内发生的微小位移$\Delta x$时，可由$\overline{v}=\frac{\Delta x}{\Delta t}$粗略地求出物体在该位置的瞬时速度．
+                  
+            \end{enumerate}
+         \end{enumerate}
+         \begin{exercise}
+            (多选)如图所示，物体沿曲线轨迹的箭头方向运动，AB、ABC、ABCD、ABCDE四段曲线轨迹运动所用的时间分别是1 s、2 s、3 s、4 s．下列说法正确的是(　ABC　)
+            
+            A．物体在AB段的平均速度大小为1 m/s
+            
+            B．物体在ABC段的平均速度大小为52 m/s
+            
+            C．AB段的平均速度比ABC段的平均速度更能反映物体处于A点时的瞬时速度
+            
+            D．物体在B点的速度等于AC段的平均速度
+            \begin{solution}
+               由$\overline{v}=\frac{\Delta x}{\Delta t}$可得$\overline{v}_{A B}=\frac{1}{1} \mathrm{m} / \mathrm{s}=1 \mathrm{m} / \mathrm{s}, \quad \overline{v}_{A C}=\frac{\sqrt{5}}{2} \mathrm{m} / \mathrm{s}$，故选项A、B均正确；所选取的过程离A点越近，其阶段的平均速度越接近A点的瞬时速度，故选项C正确；由A经B到C的过程不是匀变速直线运动过程，故B点虽为AC段的中间时刻，但其速度不等于AC段的平均速度，故选项D错误．
+               
+            \end{solution}
+        
+            
+         \end{exercise}
+         \begin{note}
+            平均速度和瞬时速度的三点注意
+            \begin{itemize}
+               \item 求解平均速度必须明确是哪一段位移或哪一段时间内的平均速度．
+               \item $\overline{v}=\frac{\Delta x}{\Delta t}$是平均速度的定义式，适用于所有的运动．
+               \item 用平均速度法近似求解瞬时速度，不仅适用于直线运动，也适用于曲线运动．时间越短，平均速度越接近于瞬时速度．
+            \end{itemize}
+         \end{note}
+         \item 速度、速度的变化量和加速度的关系
+         \begin{enumerate}
+            \item 速度的大小与加速度的大小没有必然联系．
+            \item 速度变化量与加速度没有必然的联系，速度变化量的大小由加速度和速度变化的时间决定．
+            \item $a=\frac{\Delta v}{\Delta t}$是加速度的定义式；加速度的决定式是$a=\frac{F}{m}$，即加速度的大小由物体受到的合力F和物体的质量m共同决定，加速度的方向由合力的方向决定．
+            \item 速度增大或减小由速度与加速度的方向关系决定
+            
+         \end{enumerate}
+         \begin{exercise}
+            一质点在x轴上运动，初速度$v_{0}>0$，加速度$a>0$，当加速度a的值由零逐渐增大到某一值后再逐渐减小到零，则该质点(　B　)
+           
+            A．速度先增大后减小，直到加速度等于零为止
+          
+            B．速度一直在增大，直到加速度等于零为止
+          
+            C．位移先增大，后减小，直到加速度等于零为止
+          
+            D．位移一直在增大，直到加速度为0为止
+            \begin{solution}
+               由于加速度的方向始终与速度方向相同，质点速度逐渐增大，当加速度减小到零时，速度达到最大值，选项A错误，B正确；位移逐渐增大，当加速度减小到零时，速度不再变化，位移将随时间继续增大，选项C、D错误．
+
+               
+            \end{solution}
+        
+            
+         \end{exercise}
+
+      \end{enumerate}
+
+   \section{匀变速直线运动的规律及应用}
+   \subsection{知识梳理}
+
+   \begin{enumerate}
+      \item 基本规律
+      \begin{enumerate}
+         \item 速度公式：$v=v_{0}+a t$.
+         \item 位移公式：$x=v_{0} t+\frac{1}{2} a t^2$.
+         \item 位移速度关系式：$v^{2}-v_{0}^{2}=2 a x$.
+      \end{enumerate}
+      \item 两个重要推论
+      \begin{enumerate}
+         \item 物体在一段时间内的平均速度等于这段时间中间时刻的瞬时速度，还等于初、末时刻速度矢量和的一半，即$v_{\frac{t}{2}}=\frac{v_{0}+v}{2}$..
+         \item 任意两个连续相等的时间间隔T内的位移之差为一恒量，即$\Delta x=x_{2}-x_{1}=x_{3}-x_{2}=\ldots=x_{n}-x_{n-1}=a T^{2}$..
+      \end{enumerate}
+      \item $v_{0}=0$的四个重要推论
+      \begin{enumerate}
+         \item 1T末、2T末、3T末……瞬时速度的比为$v_{1} : v_{2} : v_{3} : \ldots : v_{n}=1 : 2 : 3 : \ldots : n$..
+         \item 1T内、2T内、3T内……位移的比为$x_{1} : x_{2} : x_{3} : \ldots : x_{0}=1^{2} : 2^{2} : 3^{2} : \ldots : n^{2}$.
+         \item 第一个T内、第二个T内、第三个T内……位移的比为$x_{\mathrm{I}} : x_{\mathrm{II}} : x_{\mathrm{II}} : \ldots : x_{n}=1 : 3 : 5 : \ldots :(2 n-1)$.
+         \item 从静止开始通过连续相等的位移所用时间的比为$t_{1} : t_{2} : t_{3} : \ldots : t_{n}=1 :(\sqrt{2}-1) :(\sqrt{3}-\sqrt{2}) : \ldots :(\sqrt{n}-\sqrt{n-1})$.  
+      \end{enumerate}
+      \item 自由落体运动
+      \begin{enumerate}
+         \item 条件：物体只受重力，从静止开始下落..
+         \item 基本规律：
+         \begin{enumerate}
+            \item 速度公式$v=g t$；
+            \item 位移公式$h=\frac{1}{2} g t^{2}$；
+            \item 速度位移关系式$v^{2}=2 g h$.
+         \end{enumerate}
+      \end{enumerate}
+      \item 竖直上抛运动
+      \begin{enumerate}
+         \item 运动特点：加速度为g，上升阶段做匀减速直线运动，下降阶段做自由落体运动.
+         \item 基本规律：
+         \begin{enumerate}
+            \item 速度公式$v=v_{0}-g t$；
+            \item 位移公式$h=v_{0} t-\frac{1}{2} g t^{2}$；
+            \item 速度位移关系式$v^{2}-v_{0}^{2}=-2 g h$.
+         \end{enumerate}
+      \end{enumerate}
+   \end{enumerate}
+
+   \section{运动图象追及和相遇问题}
+   \subsection{知识梳理}
+
+   \begin{enumerate}
+      \item 直线运动的x－t图象
+      \begin{enumerate}
+         \item 意义：反映了直线运动的物体位移随时间变化的规律.
+         \item 图线上某点切线的斜率的意义
+         \begin{enumerate}
+            \item 斜率大小：表示物体速度的大小
+            \item 斜率的正负：表示物体速度的方向
+         \end{enumerate}
+         \item 两种特殊的x－t图象
+         \begin{enumerate}
+            \item 若x－t图象是一条平行于时间轴的直线，说明物体处于静止状态. (如图所示甲图线)
+            \item 若x－t图象是一条倾斜的直线，说明物体在做匀速直线运动. (如图所示乙图线)
+         \end{enumerate}
+      \end{enumerate}
+      \item 直线运动的v－t图象
+      \begin{enumerate}
+         \item 意义：反映了直线运动的物体速度随时间变化的规律.
+         \item 图线上某点切线的斜率的意义.
+         \begin{enumerate}
+            \item 斜率的大小：表示物体加速度的大小
+            \item 斜率的正负：表示物体加速度的方向
+         \end{enumerate}
+         \item 两种特殊的v－t图象
+         \begin{enumerate}
+            \item 匀速直线运动的v－t图象是与横轴平行的直线. (如图所示甲图线)
+            \item 匀变速直线运动的v－t图象是一条倾斜的直线. (如图所示乙图线)
+         \end{enumerate}
+         \item 图线与坐标轴围成的“面积”的意义
+         \begin{enumerate}
+            \item 图线与坐标轴围成的“面积”表示相应时间内的位移.
+            \item 若此面积在时间轴的上方，表示这段时间内的位移方向为正方向；若此面积在时间轴的下方，表示这段时间内的位移方向为负方向.
+         \end{enumerate}
+      \end{enumerate}
+      \item 追及和相遇问题
+      \begin{enumerate}
+         \item 两类追及问题.
+         \begin{enumerate}
+            \item 若后者能追上前者，追上时，两者处于同一位置，且后者速度一定不小于前者速度.
+            \item 若追不上前者，则当后者速度与前者相等时，两者相距最近            
+         \end{enumerate}
+         \item 两类相遇问题
+         \begin{enumerate}
+            \item 同向运动的两物体追及，追上时即相遇
+            \item 相向运动的物体，当各自发生的位移大小之和等于开始时两物体间的距离时即相遇
+            
+         \end{enumerate}
+      \end{enumerate}
+   \end{enumerate}
+
+
+\chapter{相互作用}
+
+   \section{重力　弹力　摩擦力}
+      \subsection{知识梳理}
+      \begin{enumerate}
+         \item 重力
+         \begin{enumerate}
+            \item 产生：由于地球的吸引而使物体受到的力
+            \item 大小：与物体的质量成正比，即$G=m g$.可用弹簧测力计测量重力.
+            \item 方向：总是竖直向下的
+            \item 重心：其位置与物体的质量分布和形状有关
+            
+         \end{enumerate}
+         \item 弹力
+         \begin{enumerate}
+            \item 定义：发生弹性形变的物体由于要恢复原状而对与它接触的物体产生的作用力
+            \item 产生的条件
+            \begin{enumerate}
+               \item 物体间直接接触；
+               \item 接触处发生弹性形变
+               
+            \end{enumerate}
+            \item 方向：总是与物体形变的方向相反
+            
+         \end{enumerate}
+         \item 胡克定律
+         \begin{enumerate}
+            \item 内容：在弹性限度内，弹力的大小跟弹簧伸长(或缩短)的长度x成正比.
+            \item 表达式：$F=k x$.$k$是弹簧的劲度系数，由弹簧自身的性质决定，单位是牛顿每米，用符号$\mathrm{N} / \mathrm{m}$表示. $x$是弹簧长度的变化量，不是弹簧形变以后的长度.
+            
+         \end{enumerate}
+         \item 滑动摩擦力和静摩擦力的对比
+         \begin{table}[htbp]
+            \centering
+            \caption{滑动摩擦力和静摩擦力的对比}
+              \begin{tabular}{llll}
+              \toprule
+              比较项目 & 静摩擦力 & 滑动摩擦力  \\
+              \midrule
+              定义 & 两相对静止的物体间的摩擦力 & 两相对运动的物体间的摩擦力\\
+              产生条件 & ①接触面粗糙<br>②接触处有压力<br>③两物体间又相对运动趋势 & ①接触面粗糙<br>②接触处有压力<br>③两物体间有相对运动   \\
+              大小关系 & $x \leqslant l$ & 路程是位移被无限分割后，\\
+              &&所分的各小段位移的绝对值的和  \\
+              \bottomrule
+              \end{tabular}%
+            \label{tab:theorem-class}%
+          \end{table}%
+          滑动摩擦力大小的计算公式$F_{\mathrm{f}}=\mu F_{\mathrm{N}}$中$μ$为比例常数，称为动摩擦因数，其大小与两个物体的材料和接触面的粗糙程度有关.
+      \end{enumerate}
+      \subsection{考法拓展}
+
+   \section{力的合成与分解}
+      \subsection{知识梳理}
+      \begin{enumerate}
+         \item 力的合成
+         \begin{enumerate}
+            \item 合力与分力
+            \begin{enumerate}
+               \item 定义：如果几个力共同作用产生的效果与一个力的作用效果相同，这一个力就叫做那几个力的合力，那几个力叫做这一个力的分力
+               \item 关系：合力与分力是等效替代关系
+               
+            \end{enumerate}
+            \item 共点力：作用在物体的同一点，或作用线的延长线交于一点的几个力
+            \item 力的合成
+            \begin{enumerate}
+               \item 定义：求几个力的合力的过程
+               \item 运算法则
+               \begin{enumerate}
+                  \item 平行四边形定则：求两个互成角度的共点力的合力，可以用表示这两个力的线段为邻边作平行四边形，这两个邻边之间的对角线就表示合力的大小和方向(图甲).
+                  \item 三角形定则：把两个矢量的首尾顺次连接起来，第一个矢量的首到第二个矢量的尾的有向线段为合矢量(图乙).
+                  
+               \end{enumerate}
+               
+            \end{enumerate}
+            
+         \end{enumerate}
+         \item 力的分解
+         \begin{enumerate}
+            \item 定义：求一个力的分力的过程，力的分解是力的合成的逆运算
+            \item 遵循的原则
+            \begin{enumerate}
+               \item 平行四边形定则
+               \item 三角形定则
+               
+            \end{enumerate}
+            \item 分解方法
+            \begin{enumerate}
+               \item 力的作用效果分解法
+               \item 正交分解法
+               
+            \end{enumerate}
+            
+         \end{enumerate}
+         \item 矢量和标量
+         \begin{enumerate}
+            \item 矢量
+            既有大小又有方向的物理量，相加时遵循平行四边形定则. 如速度、力等.
+               
+            \item 标量
+            
+            只有大小没有方向的物理量，求和时按算术法则相加. 如路程、动能等.
+         \end{enumerate}
+         
+      \end{enumerate}
+      \subsection{考法拓展}
+
+   \section{受力分析共点力的平衡}
+      \subsection{知识梳理}
+      \begin{enumerate}
+         \item 受力分析
+         \begin{enumerate}
+            \item 定义：把指定物体(研究对象)在特定的物理环境中受到的所有外力都找出来，并画出受力图，这个过程就是受力分析.
+            \item 受力分析的顺序：先找重力，再找接触力(弹力、摩擦力)，最后分析电场力、磁场力及其他力.
+            \item 受力分析的步骤
+            \begin{enumerate}
+               \item 明确研究对象——确定分析受力的物体，研究对象可以是单个物体，也可以是多个物体的组合.
+               \item 隔离物体分析——将研究对象从周围物体中隔离出来，进而分析物体受的重力、弹力、摩擦力、电磁力等，检查周围有哪些物体对它施加了力的作用
+               \item 画出受力示意图——边分析边将力一一画在受力示意图上，准确标出方向
+               \item 检查画出的每一个力能否找出它的施力物体，检查分析结果能否使研究对象处于题目所给的运动状态，否则，必然发生了漏力、添力或错力现象
+               
+            \end{enumerate}
+            
+         \end{enumerate}
+         \item 共点力的平衡
+         \begin{enumerate}
+            \item 平衡状态：物体处于静止或匀速直线运动状态
+            \item 共点力的平衡条件：$F_{合}=0$或者$\left\{\begin{array}{l}{F_{x}=0} \\ {F_{y}=0}\end{array}\right.$
+            \item 平衡条件的推论
+            \begin{enumerate}
+               \item 二力平衡：如果物体在两个共点力的作用下处于平衡状态，这两个力必定大小相等、方向相反，为一对平衡力
+               \item 三力平衡：如果物体在三个共点力的作用下处于平衡状态，其中任意两个力的合力一定与第三个力大小相等、方向相反
+               \item 多力平衡：如果物体受多个力作用处于平衡状态，其中任何一个力与其余力的合力大小相等、方向相反
+               
+            \end{enumerate}
+         \begin{note}
+            \begin{itemize}
+               \item 物体在某一时刻速度为零时，物体不一定处于平衡状态
+               \item 在多个共点力作用下的物体处于静止状态，如果其中一个力消失其他力保持不变，物体沿消失的力的反方向做初速度为零的匀加速直线运动
+            \end{itemize}
+            
+         \end{note}
+         \end{enumerate}
+         
+      \end{enumerate}
+      \subsection{考法拓展}
+
+
+
+
+
+
+
+\chapter{牛顿运动定律}
+
+
+   \section{牛顿第一、第三定律}
+      \subsection{知识梳理}
+      \begin{enumerate}
+         \item 牛顿第一定律
+         \begin{enumerate}
+            \item 内容：一切物体总保持匀速直线运动状态或静止状态，直到有外力迫使它改变这种状态为止
+            \item 意义
+            \begin{enumerate}
+               \item 指出了一切物体具有惯性，因此牛顿第一定律又称惯性定律
+               \item 指出力不是维持物体运动状态的原因，而是改变物体运动状态的原因，即力是产生加速度的原因
+               \item 当物体不受力时，物体总保持匀速直线运动状态或静止状态
+            \end{enumerate}
+            \item 惯性
+            \begin{enumerate}
+               \item 定义：物体具有保持原来匀速直线运动状态或静止状态的性质
+               \item 量度：质量是物体惯性大小的唯一量度，与物体的运动状态、受力情况、地理位置均无关，质量大的物体惯性大，质量小的物体惯性小
+               \item 普遍性：惯性是物体的固有属性，一切物体都有惯性
+            \end{enumerate}
+         \end{enumerate}
+         \item 牛顿第三定律
+         \begin{enumerate}
+            \item 作用力和反作用力：两个物体之间的作用总是相互的，一个物体对另一个物体施加了力，另一个物体同时对这个物体也施加了力
+            \item 内容：两个物体之间的作用力和反作用力总是大小相等、方向相反、作用在同一条直线上
+            \item 表达式：$F=-F^{\prime}$
+            \item 意义：建立了相互作用物体之间的联系及作用力与反作用力的相互依赖关系
+         \end{enumerate}
+      \end{enumerate}
+      \subsection{考法拓展}
+
+   \section{牛顿第二定律两类动力学问题}
+      \subsection{知识梳理}
+      \begin{enumerate}
+         \item 牛顿第二定律
+         \begin{enumerate}
+            \item 内容：物体加速度的大小跟它受到的作用力成正比，跟它的质量成反比.加速度的方向与作用力的方向相同.
+            \item 表达式：$F=m a$，$F$与$a$具有瞬时对应关系.
+            \item 适用范围：
+            \begin{enumerate}
+               \item 牛顿第二定律只适用于惯性参考系(相对地面静止或做匀速直线运动的参考系).
+               \item 牛顿第二定律只适用于宏观物体(相对于分子、原子)、低速运动(远小于光速)的情况.
+            \end{enumerate}
+         \end{enumerate}
+         \item 动力学两类基本问题
+         \begin{enumerate}
+            \item 动力学两类基本问题
+            \begin{enumerate}
+               \item 已知受力情况，求物体的运动情况
+               \item 已知运动情况，求物体的受力情况
+            \end{enumerate}
+            \item 解决两类基本问题的方法:以加速度为“桥梁”，由运动学公式和牛顿运动定律列方程求解，具体逻辑关系如图所示.
+         \end{enumerate}
+      \end{enumerate}
+      \subsection{考法拓展}
+
+   \section{牛顿运动定律的综合应用}
+      \subsection{知识梳理}
+      \begin{enumerate}
+         \item 超重和失重
+         \begin{enumerate}
+            \item 实重与视重
+            \begin{enumerate}
+               \item 实重：物体实际所受的重力，与物体的运动状态无关
+               \item 视重：当物体挂在弹簧测力计下或放在水平台秤上时，弹簧测力计或台秤的示数称为视重；视重大小等于弹簧测力计所受物体的拉力或台秤所受物体的压力
+            \end{enumerate}
+            \item 超重、失重和完全失重的比较
+            
+         \end{enumerate}
+         \item 连接体问题
+         \begin{enumerate}
+            \item 整体法和隔离法
+            \begin{enumerate}
+               \item 整体法:当连接体内(即系统内)各物体的加速度相同时，可以把系统内的所有物体看成一个整体，分析其受力和运动情况，运用牛顿第二定律对整体列方程求解的方法.
+               \item 隔离法:当求系统内物体间相互作用的内力时，常把某个物体从系统中隔离出来，分析其受力和运动情况，再用牛顿第二定律对隔离出来的物体列方程求解的方法.
+            \end{enumerate}
+            \item 动力学图象
+            \begin{enumerate}
+               \item 三种图象：v－t图象、a－t图象、F－t图象
+               \item 图象间的联系：加速度是联系v－t图象与F－t图象的桥梁
+            \end{enumerate}
+         \end{enumerate}
+      \end{enumerate}
+      \subsection{考法拓展}
+
+\chapter{曲线运动　万有引力与航天}
+
+   \section{曲线运动　运动的合成与分解}
+   \section{抛体运动的规律及应用}
+   \section{圆周运动的规律及应用}
+   \section{第13讲万有引力与航天}
+
+\chapter{机械能及其守恒定律}
+
+   \section{功和功率}
+   \section{动能定理及其应用}
+   \section{机械能守恒定律及其应用}
+   \section{功能关系能量守恒定律}
+
+\chapter{动量守恒定律及其应用}
+\chapter{静电场}
+\chapter{恒定电流}
+\chapter{磁场}
+\chapter{电磁感应}
+\chapter{交变电流　传感器}
+\chapter{波粒二象性　原子结构与原子核}
+\chapter{热学(选修3－3)}
+\chapter{振动和波　光　相对论(选修3－4)}
+
+\nocite{*} 
+
+\bibliography{reference}
+
+\appendix
+\chapter{物理学史}
+
+本附录包括了
+
+\begin{equation}
+\sum_{i=1}^n x_i \equiv x_1 + x_2 +\cdots + x_n
+\end{equation}
+
+
+
+\chapter{公式图表}
+
+
+
+\end{document}
