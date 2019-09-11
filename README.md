@@ -1,6 +1,6 @@
 高中物理学讲义
 备份vscode配置
-(```)
+```
 {
     "latex-workshop.latex.tools": [
         {
@@ -65,4 +65,4 @@
     "latex-workshop.view.pdf.viewer": "tab"
 
 }
-(```)
+```
