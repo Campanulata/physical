@@ -1,5 +1,6 @@
 \documentclass[cn,11pt]{elegantbook}
 \usepackage{float}
+\usepackage{tikz}
 \title{高中物理学讲义}
 \subtitle{Elegant\LaTeX{} }
 
@@ -246,7 +247,7 @@ so far as they are certain, they are not about reality. --- Albert Einstein}
    \begin{itemize}
       \item 物体在一段时间内的平均速度等于这段时间中间时刻的瞬时速度，还等于初、末时刻速度矢量和的一半，即
       
-      $v_{\frac{t}{2}}=\frac{v_{0}+v}{2}$..
+      $v_{\frac{t}{2}}=\frac{v_{0}+v}{2}$.
       \item 任意两个连续相等的时间间隔T内的位移之差为一恒量，即
       
       $\Delta x=x_{2}-x_{1}=x_{3}-x_{2}=\ldots=x_{n}-x_{n-1}=a T^{2}$
@@ -430,7 +431,7 @@ so far as they are certain, they are not about reality. --- Albert Einstein}
       \includegraphics[width=1\textwidth]{t12.png}
    \end{figure}
    \begin{example}
-      (2018·陕西汉中期末)在平直的公路上行驶的a车和b车，其位移—时间图象分别为图中直线a和曲线b，已知b车的加速度恒定且ab=－2 m/s2，当t=3 s时，直线a和曲线b刚好相切，求t=0 s时a车和b车的距离x0.      
+      (2018·陕西汉中期末)在平直的公路上行驶的a车和b车，其位移—时间图象分别为图中直线a和曲线b，已知b车的加速度恒定且ab=－2 $m/s^{2}$，当t=3 s时，直线a和曲线b刚好相切，求t=0 s时a车和b车的距离x0.      
 
       \begin{figure}[htbp]
       \centering
@@ -599,7 +600,7 @@ so far as they are certain, they are not about reality. --- Albert Einstein}
    \newpage
 
    \begin{example}
-      如图所示，固定在小车支架上的斜杆与竖直杆的夹角为θ，
+      如图所示，固定在小车支架上的斜杆与竖直杆的夹角为$\theta$，
       在斜杆下端固定一个质量为m的小球，
       下列关于杆对球的作用力F的判断中正确的是(　D　)    
       
@@ -1032,7 +1033,7 @@ so far as they are certain, they are not about reality. --- Albert Einstein}
 
    
    \begin{example}
-      如图所示，光滑斜面的倾角为θ，有两个相同的小球，
+      如图所示，光滑斜面的倾角为$\theta$，有两个相同的小球，
       分别用光滑挡板A、B挡住，挡板A沿竖直方向，挡板B垂直于斜面，
       则两挡板受到小球压力的大小之比为，
       斜面受到两个小球压力大小之比为.      
@@ -1184,7 +1185,7 @@ so far as they are certain, they are not about reality. --- Albert Einstein}
 \end{figure}
 
 \begin{example}
-   (2018·湖南常德模拟)如图所示，重为G的均匀链条，两端用等长的轻绳连接，挂在等高的地方，轻绳与水平方向成θ角．试求：
+   (2018·湖南常德模拟)如图所示，重为G的均匀链条，两端用等长的轻绳连接，挂在等高的地方，轻绳与水平方向成$\theta$角．试求：
 
    \begin{figure}[htbp]
       \centering
@@ -1228,19 +1229,19 @@ so far as they are certain, they are not about reality. --- Albert Einstein}
    \end{figure}
 \end{itemize}
 \begin{example}
-   (2017·江苏南京调研)(多选)如图所示，在粗糙水平地面上放着一个截面为四分之一圆弧的柱状物体A，A的左端紧靠竖直墙，A与竖直墙之间放一光滑圆球B，已知A的圆半径为球B的半径的3倍，球B所受的重力为G，整个装置处于静止状态．设墙壁对B的压力为F1，A对B的压力为F2，则若把A向右移动少许后，它们仍处于静止状态，则F1、F2的变化情况分别是(　AD　)
+   (2017·江苏南京调研)(多选)如图所示，在粗糙水平地面上放着一个截面为四分之一圆弧的柱状物体A，A的左端紧靠竖直墙，A与竖直墙之间放一光滑圆球B，已知A的圆半径为球B的半径的3倍，球B所受的重力为G，整个装置处于静止状态．设墙壁对B的压力为$F_{1}$，A对B的压力为$F_{2}$，则若把A向右移动少许后，它们仍处于静止状态，则$F_{1}$、$F_{2}$的变化情况分别是(　AD　)
    \begin{figure}[htbp]
       \centering
       \includegraphics[width=0.2\textwidth]{622.png}
    \end{figure}
    
-   A．F1减小	
+   A．$F_{1}$减小	
+
+   B．$F_{1}$增大
    
-   B．F1增大
+   C．$F_{2}$增大	
    
-   C．F2增大	
-   
-   D．F2减小   
+   D．$F_{2}$减小   
 \end{example}
 
 
@@ -1368,7 +1369,7 @@ so far as they are certain, they are not about reality. --- Albert Einstein}
    \item 一对平衡力与作用力、反作用力的不同点：
    \begin{figure}[htbp]
       \centering
-      \includegraphics[width=0.2\textwidth]{721.png}
+      \includegraphics[width=0.8\textwidth]{721.png}
    \end{figure}
 
 \end{itemize}
@@ -1424,52 +1425,54 @@ so far as they are certain, they are not about reality. --- Albert Einstein}
 \section{牛顿第二定律的瞬时性}
 \begin{figure}[htbp]
    \centering
-   \includegraphics[width=0.2\textwidth]{811.png}
+   \includegraphics[width=0.8\textwidth]{811.png}
 \end{figure}
 
 \begin{example}
-   (2018·广西南宁模拟)两个质量均为m的小球，用两条轻绳连接，处于平衡状态，如图所示．现突然迅速剪断轻绳OA，让小球下落，在剪断轻绳的瞬间，设小球A、B的加速度分别用a1和a2表示，则(　A　)   
+   (2018·广西南宁模拟)两个质量均为m的小球，用两条轻绳连接，处于平衡状态，如图所示．现突然迅速剪断轻绳OA，让小球下落，在剪断轻绳的瞬间，设小球A、B的加速度分别用$a_{1}$和$a_{2}$表示，则(　A　)   
    \begin{figure}[htbp]
       \centering
-      \includegraphics[width=0.2\textwidth]{812.png}
+      \includegraphics[width=0.1\textwidth]{812.png}
    \end{figure}
-   A．a1＝g　a2＝g	
+
+   A．$a_{1}$=g　$a_{2}$=g	
    
-   B．a1＝0　a2＝2g
+   B．$a_{1}$=0　$a_{2}$=2g
    
-   C．a1＝g　a2＝0	
+   C．$a_{1}$=g　$a_{2}$=0	
    
-   D．a1＝2g　a2＝0
+   D．$a_{1}$=2g　$a_{2}$=0
 
    【拓展延伸1】把“轻绳”换成“轻弹簧”
 
    在[例1]中只将A、B间的轻绳换成轻质弹簧，其他不变，如图所示，则典例选项中正确的是(　D　)
    \begin{figure}[htbp]
       \centering
-      \includegraphics[width=0.2\textwidth]{813.png}
+      \includegraphics[width=0.1\textwidth]{813.png}
    \end{figure}
-   A．a1＝g　a2＝g	
+   A．$a_{1}$=g　$a_{2}$=g	
 
-   B．a1＝0　a2＝2g
+   B．$a_{1}$=0　$a_{2}$=2g
 
-   C．a1＝g　a2＝0	
+   C．$a_{1}$=g　$a_{2}$=0	
 
-   D．a1＝2g　a2＝0
+   D．$a_{1}$=2g　$a_{2}$=0
 
    【拓展延伸2】改变平衡状态的呈现方式
 
-   把【拓展延伸1】的题图放置在倾角为θ＝30°的光滑斜面上，如图所示系统静止时，弹簧与轻绳均平行于斜面，在轻绳被剪断的瞬间，则下列说法正确的是(　B　)
+   把【拓展延伸1】的题图放置在倾角为$\theta$=30°的光滑斜面上，如图所示系统静止时，弹簧与轻绳均平行于斜面，在轻绳被剪断的瞬间，则下列说法正确的是(　B　)
    \begin{figure}[htbp]
       \centering
       \includegraphics[width=0.2\textwidth]{814.png}
    \end{figure}
-   A．aA＝0　aB＝1/2g
+   
+   A．$a_{A}$=0　$a_{B}=\dfrac {1}{2}g$
 
-   B．aA＝g　aB＝0
+   B．$a_{A}$=g　$a_{B}=0$
    
-   C．aA＝g　aB＝g	
+   C．$a_{A}$=g　$a_{B}=g$	
    
-   D．aA＝0　aB＝g
+   D．$a_{A}$=0　$a_{B}=g$
 
 \end{example}
 
@@ -1500,7 +1503,7 @@ so far as they are certain, they are not about reality. --- Albert Einstein}
    动力学两类基本问题的解题思路
    \begin{figure}[htbp]
       \centering
-      \includegraphics[width=0.8\textwidth]{821.png}
+      \includegraphics[width=0.5\textwidth]{821.png}
    \end{figure}
    
 \end{note}
@@ -1509,15 +1512,15 @@ so far as they are certain, they are not about reality. --- Albert Einstein}
    (2018·广东深圳模拟)如图所示为四旋翼无人机，它是一种能够垂直起降的小型遥控飞行器，目前得到越来越广泛的应用．      
    \begin{figure}[htbp]
       \centering
-      \includegraphics[width=0.8\textwidth]{822.png}
+      \includegraphics[width=0.3\textwidth]{822.png}
    \end{figure}
-   (1)无人机在地面上从静止开始，以最大升力竖直向上起飞．求在t＝5 s时离地面的高度h；
+   (1)无人机在地面上从静止开始，以最大升力竖直向上起飞．求在t=5 s时离地面的高度h；
    
-   (2)无人机悬停在距离地面高度H＝100 m处，由于动力设备故障，无人机突然失去升力而坠落．求无人机坠落地面时的速度v；
+   (2)无人机悬停在距离地面高度H=100 m处，由于动力设备故障，无人机突然失去升力而坠落．求无人机坠落地面时的速度v；
   
-   (3)在无人机坠落过程中，在遥控设备的干预下，动力设备重新启动提供向上最大升力．为保证安全着地，求飞行器从开始下落到恢复升力的最长时间t1.
+   (3)在无人机坠落过程中，在遥控设备的干预下，动力设备重新启动提供向上最大升力．为保证安全着地，求飞行器从开始下落到恢复升力的最长时间$t_{1}$.
    \begin{solution}
-      (1)75 m　(2)40 m/s　(3)
+      (1)75 m　(2)40 m/s　(3)$\dfrac {5\sqrt {3}}{3}s$
       
    \end{solution}
 \end{example}
@@ -1541,7 +1544,7 @@ so far as they are certain, they are not about reality. --- Albert Einstein}
    \item 模型特征
    \begin{figure}[htbp]
       \centering
-      \includegraphics[width=0.8\textwidth]{831.png}
+      \includegraphics[width=0.5\textwidth]{831.png}
    \end{figure}
    \begin{itemize}
       \item 质点从竖直圆环上沿不同的光滑弦上端由静止开始滑到环的最低点所用时间相等，如图乙所示；
@@ -1549,25 +1552,25 @@ so far as they are certain, they are not about reality. --- Albert Einstein}
       \item 两个竖直圆环相切且两环的竖直直径均过切点，质点沿不同的光滑弦上端由静止开始滑到下端所用时间相等，如图丙所示．
    \end{itemize}
    \item 思维模板
-   \begin{figure}[htbp]
+   \begin{figure}[H]
       \centering
-      \includegraphics[width=0.8\textwidth]{832.png}
+      \includegraphics[width=0.6\textwidth]{832.png}
    \end{figure}
 
 \end{itemize}
 
 \begin{example}
-   (2017·山东济南模拟)如图所示，在倾角为θ的斜面上方的A点处旋转一光滑的木板AB，B端刚好在斜面上，木板与竖直方向AC所成角度为α一小物块由A端沿木板由静止滑下，要使物块滑到斜面的时间最短，则α与θ角的大小关系(　B　)
+   (2017·山东济南模拟)如图所示，在倾角为$\theta$的斜面上方的A点处旋转一光滑的木板AB，B端刚好在斜面上，木板与竖直方向AC所成角度为α一小物块由A端沿木板由静止滑下，要使物块滑到斜面的时间最短，则α与$\theta$角的大小关系(　B　)
    
-   \begin{figure}[htbp]
+   \begin{figure}[H]
       \centering
       \includegraphics[width=0.2\textwidth]{833.png}
    \end{figure}
-   A．α＝θ	B．α＝θ/2
-   C．α＝2θ	D．α＝θ/3
+   A．$\alpha =\theta$	B．$\alpha =\dfrac {\theta }{2}$
+   C．$\alpha =2\theta$	D．$\alpha =\dfrac {\theta }{3}$
    
    \begin{solution}
-      \begin{figure}[htbp]
+      \begin{figure}[H]
          \centering
          \includegraphics[width=0.2\textwidth]{834.png}
       \end{figure}
@@ -1606,21 +1609,21 @@ so far as they are certain, they are not about reality. --- Albert Einstein}
 
 \section{对超重和失重的理解}
 \begin{example}
-   广州塔，昵称小蛮腰，总高度达600米，游客乘坐观光电梯大约一分钟就可以到达观光平台．若电梯简化成只受重力与绳索拉力，已知电梯在t＝0时由静止开始上升，a－t图象如图所示，则下列相关说法正确的是(　D　)
+   广州塔，昵称小蛮腰，总高度达600米，游客乘坐观光电梯大约一分钟就可以到达观光平台．若电梯简化成只受重力与绳索拉力，已知电梯在t=0时由静止开始上升，a－t图象如图所示，则下列相关说法正确的是(　D　)
 
    \begin{figure}[htbp]
       \centering
-      \includegraphics[width=0.2\textwidth]{911.png}
+      \includegraphics[width=0.5\textwidth]{911.png}
    \end{figure}
-   A．t＝4.5 s时，电梯处于失重状态
+   A．t=4.5 s时，电梯处于失重状态
    
    B．5～55 s时间内，绳索拉力最小
    
-   C．t＝59.5 s时，电梯处于超重状态
+   C．t=59.5 s时，电梯处于超重状态
    
-   D．t＝60 s时，电梯速度恰好为零   
+   D．t=60 s时，电梯速度恰好为零   
    \begin{solution}
-      利用a－t图象可判断t＝4.5 s时，电梯有向上的加速度，电梯处于超重状态，则选项A错误；0～5 s时间内，电梯处于超重状态，拉力>重力，5～55 s时间内，电梯处于匀速上升过程，拉力＝重力，55～60 s时间内，电梯处于失重状态，拉力<重力，综上所述，选项B、C错误；因a－t图线与t轴所围的“面积”代表速度改变量，而图中横轴上方的“面积”与横轴下方的“面积”相等，则电梯的速度在t＝60 s时为零，选项D正确．         
+      利用a－t图象可判断t=4.5 s时，电梯有向上的加速度，电梯处于超重状态，则选项A错误；0～5 s时间内，电梯处于超重状态，拉力>重力，5～55 s时间内，电梯处于匀速上升过程，拉力=重力，55～60 s时间内，电梯处于失重状态，拉力<重力，综上所述，选项B、C错误；因a－t图线与t轴所围的“面积”代表速度改变量，而图中横轴上方的“面积”与横轴下方的“面积”相等，则电梯的速度在t=60 s时为零，选项D正确．         
    \end{solution}
 \end{example}
 
@@ -1646,15 +1649,15 @@ so far as they are certain, they are not about reality. --- Albert Einstein}
 \section{动力学中的图象问题}
 \begin{figure}[htbp]
    \centering
-   \includegraphics[width=0.2\textwidth]{921.png}
+   \includegraphics[width=0.9\textwidth]{921.png}
 \end{figure}
 
 \begin{example}
-   (多选)2012年11月，“歼15”舰载机在“辽宁号”航空母舰上着舰成功，图甲为利用阻拦系统让舰载机在飞行甲板上快速停止的原理示意图．飞机着舰并成功钩住阻拦索后，飞机的动力系统立即关闭，阻拦系统通过阻拦索对飞机施加一作用力，使飞机在甲板上短距离滑行后停止．某次降落，以飞机着舰为计时零点，飞机在t＝0.4 s时恰好钩住阻拦索中间位置，其着舰到停止的速度—时间图线如图乙所示．假如无阻拦索，飞机从着舰到停止需要的滑行距离约为1 000 m．已知航母始终静止，重力加速度的大小为g，则(　AC　)
+   (多选)2012年11月，“歼15”舰载机在“辽宁号”航空母舰上着舰成功，图甲为利用阻拦系统让舰载机在飞行甲板上快速停止的原理示意图．飞机着舰并成功钩住阻拦索后，飞机的动力系统立即关闭，阻拦系统通过阻拦索对飞机施加一作用力，使飞机在甲板上短距离滑行后停止．某次降落，以飞机着舰为计时零点，飞机在t=0.4s时恰好钩住阻拦索中间位置，其着舰到停止的速度—时间图线如图乙所示．假如无阻拦索，飞机从着舰到停止需要的滑行距离约为1000 m．已知航母始终静止，重力加速度的大小为g，则(　AC　)
 
-   \begin{figure}[htbp]
+   \begin{figure}[H]
       \centering
-      \includegraphics[width=0.2\textwidth]{922.png}
+      \includegraphics[width=0.5\textwidth]{922.png}
    \end{figure}
    A．从着舰到停止，飞机在甲板上滑行的距离约为无阻拦索时的
    
@@ -1667,7 +1670,7 @@ so far as they are certain, they are not about reality. --- Albert Einstein}
    能正确识图，并从图象中提取所需的信息，是解答此类问题的关键，本题的分析思路具有一定的代表性，逻辑流程如下：
    \begin{figure}[htbp]
       \centering
-      \includegraphics[width=0.2\textwidth]{923.png}
+      \includegraphics[width=0.5\textwidth]{923.png}
    \end{figure}
 
 
@@ -1688,23 +1691,23 @@ so far as they are certain, they are not about reality. --- Albert Einstein}
 \end{note}
 
 \begin{example}
-   (多选)如图所示，质量为m2的物体，放在沿平直轨道向左行驶的车厢底板上，并用竖直细绳通过光滑的定滑轮连接质量为m1的物体．当车向左匀加速运动时，与物体m1相连接的绳与竖直方向成θ角，m2与车厢相对静止．则(　BD　)
+   (多选)如图所示，质量为$m_{2}$的物体，放在沿平直轨道向左行驶的车厢底板上，并用竖直细绳通过光滑的定滑轮连接质量为$m_{1}$的物体．当车向左匀加速运动时，与物体$m_{1}$相连接的绳与竖直方向成$\theta$角，$m_{2}$与车厢相对静止．则(　BD　)
 
    \begin{figure}[htbp]
       \centering
       \includegraphics[width=0.2\textwidth]{931.png}
    \end{figure}
 
-   A．车厢的加速度为gsin θ
+   A．车厢的加速度为gsin $\theta$
 
-   B．绳对物体m1的拉力T为   
+   B．绳对物体$m_{1}$的拉力T为   
    
-   C．地板对物体m2的支持力FN＝(m2－m1)g
+   C．地板对物体$m_{2}$的支持力$F_{N}$=($m_{2}$－$m_{1}$)g
 
-   D．物体m2所受底板的摩擦力Ff＝m2gtan θ
+   D．物体$m_{2}$所受底板的摩擦力$F_{f}$=$m_{2}$gtan $\theta$
    
    \begin{solution}
-      以物体m1为研究对象，分析受力情况如图甲所示，根据牛顿第二定律得m1gtan θ＝m1a，得a＝gtan θ，则车厢的加速度也为gtan θ.绳对物体m1的拉力T＝
+      以物体$m_{1}$为研究对象，分析受力情况如图甲所示，根据牛顿第二定律得$m_{1}$gtan $\theta$=$m_{1}$a，得a=gtan $\theta$，则车厢的加速度也为gtan $\theta$.绳对物体$m_{1}$的拉力$T=\dfrac {m_{1}g}{\cos \theta }$，故选项A错误，B正确；以物体$m_{2}$为研究对象，分析其受力情况如图乙所示，根据牛顿第二定律有$F_{N}=m_{2}g-T=m_{2}g-\dfrac {m_{1}g}{\cos \theta },F_{f}=m_{2}a=m_{2}g\tan \theta.$故选项C错误，D正确.
       
    \begin{figure}[htbp]
       \centering
@@ -1719,7 +1722,7 @@ so far as they are certain, they are not about reality. --- Albert Einstein}
    分析连接体问题的思路
    \begin{figure}[htbp]
       \centering
-      \includegraphics[width=0.2\textwidth]{933.png}
+      \includegraphics[width=0.5\textwidth]{933.png}
    \end{figure}
 
    
@@ -1738,20 +1741,20 @@ so far as they are certain, they are not about reality. --- Albert Einstein}
 \end{itemize}
 
 \begin{example}
-   (2018·山东济南重点中学联考)如图甲所示，水平传送带沿顺时针方向匀速运转．从传送带左端P先后由静止轻轻放上三个物体A、B、C，物体A经tA＝9.5 s到达传送带另一端Q，物体B经tB＝10 s到达传送带另一端Q，若释放物体时刻作为t＝0时刻，分别作出三物体的v－t图象如图乙、丙、丁所示．求：
+   (2018·山东济南重点中学联考)如图甲所示，水平传送带沿顺时针方向匀速运转．从传送带左端P先后由静止轻轻放上三个物体A、B、C，物体A经$t_{A}$=9.5 s到达传送带另一端Q，物体B经$t_{B}$=10 s到达传送带另一端Q，若释放物体时刻作为t=0时刻，分别作出三物体的v－t图象如图乙、丙、丁所示．求：
 
    \begin{figure}[htbp]
       \centering
-      \includegraphics[width=0.2\textwidth]{941.png}
+      \includegraphics[width=0.5\textwidth]{941.png}
    \end{figure}
 
-   (1)传送带的速度大小v0；
+   (1)传送带的速度大小$v_{0}$；
    
    (2)PQ的长度L；
    
    (3)物体A、B、C与传送带间的动摩擦因数；
    
-   (4)物体C从传送带左端P到右端Q所用的时间tC．   
+   (4)物体C从传送带左端P到右端Q所用的时间$t_{C}$．   
    \begin{solution}
       (1)4 m/s　(2)36 m　(3)0.4　0.2　0.012 5　(4)24 s      
 
@@ -1762,28 +1765,29 @@ so far as they are certain, they are not about reality. --- Albert Einstein}
    滑块在水平传送带上运动常见的三个情景
    \begin{figure}[htbp]
       \centering
-      \includegraphics[width=0.2\textwidth]{942.png}
+      \includegraphics[width=0.9\textwidth]{942.png}
    \end{figure}
 \end{note}
 
 \begin{example}
-   如图所示，倾角为θ＝30°的皮带运输机的皮带始终绷紧，且以恒定速度v＝2.5 m/s运动，两轮相距LAB＝5 m，将质量m＝1 kg的物体无初速度地轻轻放在A处，若物体与皮带间的动摩擦因数μ＝gen3/2(取g＝10 m/s2)，物体从A运动到B共需多长时间？
+   如图所示，倾角为$\theta=30^{\circ}$的皮带运输机的皮带始终绷紧，且以恒定速度$v=2.5 m/s$运动，两轮相距$L_{AB}=5m$，将质量$m=1 kg$的物体无初速度地轻轻放在A处，若物体与皮带间的动摩擦因数$\mu=\frac{\sqrt{3}}{2}$(取g=10 $m/s^{2}$)，物体从A运动到B共需多长时间？
 
    \begin{figure}[htbp]
       \centering
-      \includegraphics[width=0.2\textwidth]{943.png}
+      \includegraphics[width=0.3\textwidth]{943.png}
    \end{figure}
 
    \begin{solution}
       第一阶段，物块向上匀加速运动，由牛顿第二定律有
-      μmgcos θ－mgsin θ＝ma1，
-      代入数据求得a1＝2.5 m/s2.
-      根据匀变速直线运动规律得v＝a1t1，x1＝v/2 t1，
-      代入数据求得t1＝1 s，x1＝1.25 m.
-      第二阶段，由于μ>tan θ，故物体向上匀速运动．
-      LAB－x1＝vt2，
-      t2＝1.5 s.
-      总时间t＝t1＋t2＝2.5 s.
+      $\mu mg\cos\theta-mg\sin \theta=ma_{1}$，
+      代入数据求得$a_{1}=2.5m/s^{2}$.
+      根据匀变速直线运动规律得$v=a_{1}t_{1}$，$x_{1}=\frac{v}{2} t_{1}$，
+      代入数据求得$t_{1}=1s,x_{1}=1.25 m.$
+      第二阶段，由于$\mu>\tan\theta$，故物体向上匀速运动．
+      $L_{AB}-x_{1}=vt_{2}$，
+      $t_{2}=1.5 s.$
+      总时间$t=t_{1}+t_{2}=2.5s$.
+
       答案　2.5 s
    \end{solution}
 \end{example}
@@ -1791,37 +1795,36 @@ so far as they are certain, they are not about reality. --- Albert Einstein}
 \begin{note}
    滑块在倾斜传送带上运动常见的四个情景
    
-   \begin{figure}[htbp]
+   \begin{figure}[H]
       \centering
-      \includegraphics[width=0.2\textwidth]{944.png}
+      \includegraphics[width=0.9\textwidth]{944.png}
    \end{figure}
 \end{note}
-
 
 
 
 \section{滑块——木板模型}
 \begin{itemize}
    \item 模型特点：滑块(视为质点)置于木板上，滑块和木板均相对地面运动，且滑块和木板在摩擦力的相互作用下发生相对滑动．
-   \item 位移关系：滑块由木板一端运动到另一端的过程中，滑块和木板同向运动时，位移之差Δx＝x1－x2＝L(板长)；滑块和木板反向运动时，位移之和Δx＝x2＋x1＝L.
+   \item 位移关系：滑块由木板一端运动到另一端的过程中，滑块和木板同向运动时，位移之差$\Delta x=x_{1}－x_{2}=L$(板长)；滑块和木板反向运动时，位移之和$\Delta x=x_{2}＋x_{1}=L$.
    \begin{figure}[htbp]
       \centering
-      \includegraphics[width=0.2\textwidth]{951.png}
+      \includegraphics[width=0.5\textwidth]{951.png}
    \end{figure}
 
 \end{itemize}
 
 \begin{example}
-   一长木板在水平地面上运动，在t＝0时刻将一相对于地面静止的物块轻放到木板上，以后木板运动的速度—时间图象如图所示．已知物块与木板的质量相等，物块与木板间及木板与地面间均有摩擦．物块与木板间的最大静摩擦力等于滑动摩擦力，且物块始终在木板上，取重力加速度的大小g＝10 m/s2.求：
+   一长木板在水平地面上运动，在$t=0$时刻将一相对于地面静止的物块轻放到木板上，以后木板运动的速度—时间图象如图所示．已知物块与木板的质量相等，物块与木板间及木板与地面间均有摩擦．物块与木板间的最大静摩擦力等于滑动摩擦力，且物块始终在木板上，取重力加速度的大小 $g=10m/s^{2}$.求：
 
-   \begin{figure}[htbp]
+   \begin{figure}[H]
       \centering
       \includegraphics[width=0.2\textwidth]{952.png}
    \end{figure}
 
    (1)物块与木板间、木板与地面间的动摩擦因数；
 
-   (2)从t＝0时刻到物块与木板均停止运动时，物块相对于木板的位移的大小．
+   (2)从$t=0$时刻到物块与木板均停止运动时，物块相对于木板的位移的大小．
 
    \begin{solution}
    (1)0.20　0.30　(2)1.125 m
@@ -1830,9 +1833,9 @@ so far as they are certain, they are not about reality. --- Albert Einstein}
 
 \begin{note}
    “滑块——滑板”模型问题的分析思路
-   \begin{figure}[htbp]
+   \begin{figure}[H]
       \centering
-      \includegraphics[width=0.2\textwidth]{953.png}
+      \includegraphics[width=0.6\textwidth]{953.png}
    \end{figure}
 \end{note}
 
