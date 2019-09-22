@@ -15,6 +15,7 @@
 \SetupKeyvalOptions{family=ELEGANT, prefix=ELEGANT@, setkeys=\kvsetkeys}
 \newcommand{\ekv}[1]{\kvsetkeys{ELEGANT}{#1}}
 
+
 % ----- Colors -----
 \DeclareStringOption[blue]{color}
 \DeclareStringOption[en]{lang}
@@ -355,6 +356,8 @@
 \newcommand\email[1]{\href{mailto:#1}{\nolinkurl{#1}}}
 
 %%   章节设置
+% \RequirePackage[center]{titlesec}
+
 \RequirePackage[center,pagestyles]{titlesec}
 \RequirePackage{apptools}
 \RequirePackage[toc,page]{appendix}
