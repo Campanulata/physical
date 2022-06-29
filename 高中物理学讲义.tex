@@ -1,8 +1,6 @@
-\documentclass[cn,11pt, simple]{elegantbook}
+\documentclass[cn,11pt,mac, simple]{elegantbook}
 
-\usepackage{float}
-\usepackage{tikz}
-\usepackage{titlesec}
+
 % \titleclass{\clearpage\section}{top}
 % \newcommand\clearpage\sectionbreak{\clearpage}
 
@@ -19,6 +17,11 @@ so far as they are certain, they are not about reality. --- Albert Einstein}
 
 \logo{logo.png}
 \cover{cover.jpg}
+% 本文档命令
+\usepackage{float}
+\usepackage{tikz}
+\usepackage{titlesec}
+
 
 \begin{document}
 
@@ -2286,7 +2289,7 @@ so far as they are certain, they are not about reality. --- Albert Einstein}
 
 \nocite{*} 
 
-\bibliography{reference}
+\printbibliography[heading=bibintoc, title=\ebibname]
 
 \appendix
 \chapter{物理学史}
